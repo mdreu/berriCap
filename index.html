@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div id="header">
+    <h1>Berri</h1>
+</div>
+<div id="form">
+    <form 
+        action="https://formspree.io/f/xknyppdl"
+        method="POST"
+    >
+        <h2></h2>
+        <label for="name">Full Name</label>
+        <br>
+        <input type="text" name="name">
+        <br> <br>
+        <label for="date">Date</label>
+        <br>
+        <input type="date" name="date" id="date" readonly>
+        <br> <br>
+        <label for="email">Email</label>
+        <br>
+        <input type="email" name="email">
+        <br> <br>
+        <label for="project">Project</label>
+        <br>
+        <input type="text" name="project">
+        <br> <br>
+        <label for="rep">Repository</label>
+        <br>
+        <input type="text" name="rep">
+        <br>
+        <button class="submit" type="submit onclick="makeComplete()">Submit</span> <div id="target"></div></button>
+    </form>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
