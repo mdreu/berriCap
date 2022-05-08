@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/e0a12300b3.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
 <div id="header">
     <h1>Berri</h1>
+    
 </div>
 <div id="form">
     <form 
         action="https://formspree.io/f/xknyppdl"
         method="POST"
     >
-        <h2></h2>
+        <div>
+            <h2></h2>
+        </div>
         <label for="name">Full Name</label>
         <br>
         <input type="text" name="name">
@@ -40,7 +46,9 @@
         <button class="submit" type="submit onclick="makeComplete()">Submit</span> <div id="target"></div></button>
     </form>
 </div>
-
+<div id="footer">
+    <button type="button" onclick="dayMode()" i class="fa-solid fa-sun" id="dayMode"></i></button>
+</div>
 <script src="app.js"></script>
 </body>
 </html>

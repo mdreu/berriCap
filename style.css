@@ -10,13 +10,16 @@
 
 html {
   height: 100%;
-  background: -webkit-gradient(linear, right bottom, left top, from(#BDDCFF), color-stop(#69A0AD), to(#335962)) no-repeat;
-  background: linear-gradient(to left top, #BDDCFF, #69A0AD, #335962);
+  background: -webkit-gradient(linear, right bottom, left top, from(var(--color-accent)), color-stop(var(--color-secondary)), to(var(--color-main))) no-repeat;
+  background: var(--background);
   overflow-x: hidden;
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
-
+.dark-mode {
+  background-color: black;
+  color: white;
+}
 #header {
   width: 100%;
   color: white;
@@ -60,7 +63,7 @@ html {
 #form input {
   height: 25px;
   width: 350px;
-  border: #335962 solid 2px;
+  border: var(--color-main) solid 2px;
 }
 
 .submit {
@@ -68,7 +71,7 @@ html {
   left: 300px;
   position: relative;
   border-radius: 20px;
-  background-color: #335962;
+  background-color: var(--color-main);
   color: #fff;
   text-transform: uppercase;
   font-size: 20px;
@@ -173,7 +176,7 @@ html {
 
 @media (max-width: 602px) {
   #form form h2:before {
-    color: #335962;
+    color: var(--color-main);
     position: relative;
   }
 
@@ -197,4 +200,19 @@ html {
   .submit {
     left: 240px;
   }
+}
+#footer {
+  text-align: right;
+  margin-top: 120px;
+  margin-right: 100px;
+}
+#footer button:hover {
+  color: white;
+}
+#footer button {
+  
+  position: relative;
+  border: none;
+  background: transparent;
+  font-size: 50px;
 }
