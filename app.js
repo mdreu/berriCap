@@ -34,6 +34,8 @@ function dayMode() {
         document.documentElement.style.setProperty('--color-accent', '#46646A');
         document.documentElement.style.setProperty('--color-secondary', '#374649');
         document.documentElement.style.setProperty('--color-form', '#1E2123');
+        document.documentElement.style.setProperty('--color-word', 'white');
+        document.documentElement.style.setProperty('--color-button', 'grey');
         document.getElementById("dayMode").classList.add('fa-moon');
         document.getElementById("dayMode").classList.remove('fa-sun');
         num = 1;
@@ -43,6 +45,8 @@ function dayMode() {
         document.documentElement.style.setProperty('--color-accent', '#BDDCFF');
         document.documentElement.style.setProperty('--color-secondary', '#69A0AD');
         document.documentElement.style.setProperty('--color-form', 'white');
+        document.documentElement.style.setProperty('--color-word', '#335962');
+        document.documentElement.style.setProperty('--color-button', '#335962');
         document.getElementById("dayMode").classList.add('fa-sun');
         document.getElementById("dayMode").classList.remove('fa-moon');
         num = 0;

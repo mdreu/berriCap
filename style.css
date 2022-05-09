@@ -5,6 +5,8 @@
   --color-accent: #BDDCFF;
   --color-secondary: #69A0AD;
   --color-form: white;
+  --color-word: #335962;
+  --color-button: #335962;
   --background: linear-gradient(to left top, var(--color-accent), var(--color-secondary), var(--color-main));
   
 }
@@ -49,7 +51,7 @@ html {
   padding-left: 100px;
   padding-right: 0px;
   border-radius: 20px;
-  color: #335962;
+  color: var(--color-word);
   font-size: 15px;
   -webkit-box-shadow: -2px 5px 8px 1px #0000007a;
           box-shadow: -2px 5px 8px 1px #0000007a;
@@ -72,7 +74,7 @@ html {
   left: 300px;
   position: relative;
   border-radius: 20px;
-  background-color: var(--color-main);
+  background-color: var(--color-button);
   color: #fff;
   text-transform: uppercase;
   font-size: 20px;
