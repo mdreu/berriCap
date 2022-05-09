@@ -7,6 +7,7 @@
   --color-form: white;
   --color-word: #335962;
   --color-button: #335962;
+  --color-txtBox: white;
   --background: linear-gradient(to left top, var(--color-accent), var(--color-secondary), var(--color-main));
   
 }
@@ -47,7 +48,7 @@ html {
   width: 500px;
   display: inline-block;
   background-color: var(--color-form);
-  padding-top: 80px;
+  padding-top: 20px;
   padding-left: 100px;
   padding-right: 0px;
   border-radius: 20px;
@@ -67,6 +68,7 @@ html {
   height: 25px;
   width: 350px;
   border: var(--color-main) solid 2px;
+  background-color: var(--color-txtBox);
 }
 
 .submit {
@@ -179,7 +181,7 @@ html {
 
 @media (max-width: 602px) {
   #form form h2:before {
-    color: var(--color-main);
+    color: var(--color-word);
     position: relative;
   }
 
