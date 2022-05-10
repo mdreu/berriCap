@@ -23,13 +23,7 @@
         <div>
             <h2></h2>
         </div>
-        <!-- <div>
-            <ul>
-                <li onclick="redMode()">red</li>
-                <li>green</li>
-                <li>yellow</li>
-            </ul>
-        </div> -->
+    
         <label for="name">Full Name</label>
         <br>
         <input type="text" name="name">
@@ -54,7 +48,13 @@
     </form>
 </div>
 <div id="footer">
-    <button type="button" onclick="dayMode()" i class="fa-solid fa-sun" id="dayMode"></i></button>
+    <div id="colorChoice">
+        <button><i onclick="redMode()" class="fa-solid fa-circle"></i></button>
+        <button><i onclick="yellowMode()" class="fa-solid fa-circle"></i></button>
+        <button> <i onclick="greenMode()" class="fa-solid fa-circle"></i></button>
+        <button type="button" onclick="dayMode()" i class="fa-solid fa-sun" id="dayMode"></i></button>
+    </div>
+    
     <!-- <button type="button" onclick="darkMode()" i class="fa-solid fa-sun"></i></button> -->
 </div>
 <script src="app.js"></script>

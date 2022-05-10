@@ -4,6 +4,7 @@
   --color-main: #335962;
   --color-accent: #BDDCFF;
   --color-secondary: #69A0AD;
+  --color-border: #335962;
   --color-form: white;
   --color-word: #335962;
   --color-button: #335962;
@@ -51,6 +52,7 @@ html {
   padding-top: 20px;
   padding-left: 100px;
   padding-right: 0px;
+  padding-bottom: 30px;
   border-radius: 20px;
   color: var(--color-word);
   font-size: 15px;
@@ -58,7 +60,7 @@ html {
           box-shadow: -2px 5px 8px 1px #0000007a;
 }
 #form form h2:before {
-  content: "berri";
+  content: "Berri";
   position: absolute;
   color: transparent;
   font: 400;
@@ -67,8 +69,36 @@ html {
 #form input {
   height: 25px;
   width: 350px;
-  border: var(--color-main) solid 2px;
+  border: var(--color-border) solid 2px;
   background-color: var(--color-txtBox);
+  color: var(--color-word);
+}
+#colorChoice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background: rgba(0, 0, 0, 0.171);
+  border-radius: 10px;
+  width: 240px;
+  padding: 10px;
+  position: relative;
+  
+}
+#colorChoice i {
+  margin: 10px;
+  font-size: larger;
+}
+#colorChoice button:first-child {
+  color: #B12929;
+}
+#colorChoice button:nth-child(2){
+  color: #FFF08F;
+}
+#colorChoice button:nth-child(3){
+  color: #B4D391;
+}
+#formHeader {
+  display: flex;
 }
 
 .submit {
@@ -138,7 +168,10 @@ html {
     border: transparent;
   }
 }
-
+#date {
+  color: #335962;
+  font-family: "Roboto", sans-serif;
+}
 @keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -210,6 +243,7 @@ html {
   text-align: right;
   margin-top: 80px;
   margin-right: 100px;
+  float: right;
 }
 #footer button:hover {
   color: white;
@@ -219,5 +253,8 @@ html {
   position: relative;
   border: none;
   background: transparent;
-  font-size: 50px;
+  font-size: 30px;
+}
+#footer button:nth-child(4) {
+  font-size: 45px;
 }

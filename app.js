@@ -33,6 +33,7 @@ function dayMode() {
         document.documentElement.style.setProperty('--color-main', '#1E2123');
         document.documentElement.style.setProperty('--color-accent', '#46646A');
         document.documentElement.style.setProperty('--color-secondary', '#374649');
+        document.documentElement.style.setProperty('--color-border', '#1E2123');
         document.documentElement.style.setProperty('--color-form', '#1E2123');
         document.documentElement.style.setProperty('--color-word', 'white');
         document.documentElement.style.setProperty('--color-button', 'grey');
@@ -45,6 +46,7 @@ function dayMode() {
         document.documentElement.style.setProperty('--color-main', '#335962');
         document.documentElement.style.setProperty('--color-accent', '#BDDCFF');
         document.documentElement.style.setProperty('--color-secondary', '#69A0AD');
+        document.documentElement.style.setProperty('--color-border', '#335962');
         document.documentElement.style.setProperty('--color-form', 'white');
         document.documentElement.style.setProperty('--color-word', '#335962');
         document.documentElement.style.setProperty('--color-button', '#335962');
@@ -59,9 +61,9 @@ let redNum = 0;
 function redMode() {
     
     if (redNum == 0) {
-        document.documentElement.style.setProperty('--color-main', '#1E2123');
-        document.documentElement.style.setProperty('--color-accent', '#46646A');
-        document.documentElement.style.setProperty('--color-secondary', '#374649');
+        document.documentElement.style.setProperty('--color-main', '#B12929');
+        document.documentElement.style.setProperty('--color-accent', '#F26161');
+        document.documentElement.style.setProperty('--color-secondary', '#FF8F8F');
         document.documentElement.style.setProperty('--color-form', '#1E2123');
         document.documentElement.style.setProperty('--color-word', 'white');
         document.documentElement.style.setProperty('--color-button', 'grey');
@@ -69,95 +71,101 @@ function redMode() {
 
         redNum = 1;
     }
-    else {
-        document.documentElement.style.setProperty('--color-main', '#335962');
-        document.documentElement.style.setProperty('--color-accent', '#BDDCFF');
-        document.documentElement.style.setProperty('--color-secondary', '#69A0AD');
-        document.documentElement.style.setProperty('--color-form', 'white');
-        document.documentElement.style.setProperty('--color-word', '#335962');
-        document.documentElement.style.setProperty('--color-button', '#335962');
-        document.documentElement.style.setProperty('--color-txtBox', 'white');
-
-        redNum = 0;
-    }
-
-}
-let num = 0;
-function dayMode() {
-    
-    if (num == 0) {
+    else if (num == 1) {
         document.documentElement.style.setProperty('--color-main', '#1E2123');
         document.documentElement.style.setProperty('--color-accent', '#46646A');
         document.documentElement.style.setProperty('--color-secondary', '#374649');
+        document.documentElement.style.setProperty('--color-border', '#1E2123');
         document.documentElement.style.setProperty('--color-form', '#1E2123');
         document.documentElement.style.setProperty('--color-word', 'white');
         document.documentElement.style.setProperty('--color-button', 'grey');
         document.documentElement.style.setProperty('--color-txtBox', 'grey');
-
-        num = 1;
+        redNum =0;
     }
     else {
         document.documentElement.style.setProperty('--color-main', '#335962');
         document.documentElement.style.setProperty('--color-accent', '#BDDCFF');
         document.documentElement.style.setProperty('--color-secondary', '#69A0AD');
+        document.documentElement.style.setProperty('--color-border', '#335962');
         document.documentElement.style.setProperty('--color-form', 'white');
         document.documentElement.style.setProperty('--color-word', '#335962');
         document.documentElement.style.setProperty('--color-button', '#335962');
         document.documentElement.style.setProperty('--color-txtBox', 'white');
-
-        num = 0;
+        redNum =0;
     }
 
 }
-let num = 0;
-function dayMode() {
+let yellowNum = 0;
+function yellowMode() {
     
-    if (num == 0) {
+    if (yellowNum == 0) {
+        document.documentElement.style.setProperty('--color-main', '#FFF08F');
+        document.documentElement.style.setProperty('--color-accent', '#FFECC0');
+        document.documentElement.style.setProperty('--color-secondary', '#F7F7D4');
+        document.documentElement.style.setProperty('--color-form', '#1E2123');
+        document.documentElement.style.setProperty('--color-word', 'white');
+        document.documentElement.style.setProperty('--color-txtBox', 'white');
+
+        yellowNum = 1;
+    }
+    else if (num == 1) {
         document.documentElement.style.setProperty('--color-main', '#1E2123');
         document.documentElement.style.setProperty('--color-accent', '#46646A');
         document.documentElement.style.setProperty('--color-secondary', '#374649');
+        document.documentElement.style.setProperty('--color-border', '#1E2123');
         document.documentElement.style.setProperty('--color-form', '#1E2123');
         document.documentElement.style.setProperty('--color-word', 'white');
         document.documentElement.style.setProperty('--color-button', 'grey');
         document.documentElement.style.setProperty('--color-txtBox', 'grey');
-        num = 1;
+        yellowNum =0;
     }
     else {
         document.documentElement.style.setProperty('--color-main', '#335962');
         document.documentElement.style.setProperty('--color-accent', '#BDDCFF');
         document.documentElement.style.setProperty('--color-secondary', '#69A0AD');
+        document.documentElement.style.setProperty('--color-border', '#335962');
         document.documentElement.style.setProperty('--color-form', 'white');
         document.documentElement.style.setProperty('--color-word', '#335962');
         document.documentElement.style.setProperty('--color-button', '#335962');
         document.documentElement.style.setProperty('--color-txtBox', 'white');
-
-        num = 0;
+        yellowNum =0;
     }
 
 }
-let num = 0;
-function dayMode() {
+let greenNum = 0;
+function greenMode() {
     
-    if (num == 0) {
-        document.documentElement.style.setProperty('--color-main', '#1E2123');
-        document.documentElement.style.setProperty('--color-accent', '#46646A');
-        document.documentElement.style.setProperty('--color-secondary', '#374649');
+    if (greenNum == 0) {
+        document.documentElement.style.setProperty('--color-main', '#77A563');
+        document.documentElement.style.setProperty('--color-accent', '#9BC490');
+        document.documentElement.style.setProperty('--color-secondary', '#B4D391');
         document.documentElement.style.setProperty('--color-form', '#1E2123');
         document.documentElement.style.setProperty('--color-word', 'white');
         document.documentElement.style.setProperty('--color-button', 'grey');
         document.documentElement.style.setProperty('--color-txtBox', 'grey');
-        num = 1;
+        greenNum = 1;
+    }
+    else if (num == 1) {
+        document.documentElement.style.setProperty('--color-main', '#1E2123');
+        document.documentElement.style.setProperty('--color-accent', '#46646A');
+        document.documentElement.style.setProperty('--color-secondary', '#374649');
+        document.documentElement.style.setProperty('--color-border', '#1E2123');
+        document.documentElement.style.setProperty('--color-form', '#1E2123');
+        document.documentElement.style.setProperty('--color-word', 'white');
+        document.documentElement.style.setProperty('--color-button', 'grey');
+        document.documentElement.style.setProperty('--color-txtBox', 'grey');
+        greenNum =0;
     }
     else {
         document.documentElement.style.setProperty('--color-main', '#335962');
         document.documentElement.style.setProperty('--color-accent', '#BDDCFF');
         document.documentElement.style.setProperty('--color-secondary', '#69A0AD');
+        document.documentElement.style.setProperty('--color-border', '#335962');
         document.documentElement.style.setProperty('--color-form', 'white');
         document.documentElement.style.setProperty('--color-word', '#335962');
         document.documentElement.style.setProperty('--color-button', '#335962');
         document.documentElement.style.setProperty('--color-txtBox', 'white');
-
-        num = 0;
+        greenNum =0;
     }
 
 }
